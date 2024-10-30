@@ -46,7 +46,7 @@ public class Client {
         Thread t = new Thread(new MsgReceived());
         t.start();
 
-        // sends username to server
+        // send username to server
         serverOut.println("/name " + userName);
 
         // current thread sends messages to server
